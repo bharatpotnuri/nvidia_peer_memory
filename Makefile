@@ -1,6 +1,9 @@
 obj-m += nv_peer_mem.o
 
-OFA_KERNEL=/usr/local/src/bug25634/compat-rdma
+#
+# Do 'make OFA_KERNEL=/pathto/compat-rdma' if building
+# on top of an OFED-3.x installation.
+#
 
 PWD  := $(shell pwd)
 KVER := $(shell uname -r)
